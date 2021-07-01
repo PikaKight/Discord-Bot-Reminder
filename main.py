@@ -20,8 +20,7 @@ async def on_message(message):
     if message.channel.name == 'test':
         if message.content.startswith('$hello'):
             await message.channel.send(f'Hello {username}!')
-        
-        
+
         elif message.content.startswith('$bye'):
             await client.logout()
             quit()
