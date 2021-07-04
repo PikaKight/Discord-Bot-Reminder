@@ -21,6 +21,10 @@ async def on_message(message):
         if message.content.startswith('$hello'):
             await message.channel.send(f'Hello {username}!')
 
+        elif message.content.startswith('$newr'):
+            await message.channel.send("What is the reminder: ")
+            
+
         elif message.content.startswith('$bye'):
             await client.logout()
             quit()
